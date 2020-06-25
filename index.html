@@ -71,51 +71,57 @@
         <div class="submenu">
             Videos
         </div>
+        
+        <!-- Video Player -->
+        <div>
+            <iframe class="playing-video" src="#" mute = "1" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture "
+        allowfullscreen></iframe>
+        </div>
+
+        <!-- Videos -->
         <div class="videos-grid">
             <article>
-                <div class="feature" id="play-video">
+                <div class="main-video" >
                     <img src="./images/likemebetter.jpg" alt="Main Video">
-                    <svg class = "play" onclick = "playVideo()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <svg class = "play" onclick = "playVideo('https://www.youtube.com/embed/BcqxLCWn-CE')" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
                             d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
                     </svg>
-                    <iframe class="playing-video" src="https://www.youtube.com/embed/BcqxLCWn-CE" mute = "1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture "
-                        allowfullscreen></iframe>
                 </div>
             </article>
-            <!-- Other videos -->
+
             <article>
-                <div class="main-video" id="play-video">
+                <div class="main-video" >
                     <img src="./images/noway.jpg" alt="Main Video">
-                    <svg class = "play" onclick = "playVideo()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <svg class = "play" onclick = "playVideo('https://www.youtube.com/embed/-MZ8guTxcFU')" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
                             d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
                     </svg>
                 </div>
             </article>
             <article>
-                <div class="main-video" id="play-video">
+                <div class="main-video" >
                     <img src="./images/other.jpg" alt="Main Video">
-                    <svg class = "play" onclick = "playVideo()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <svg class = "play" onclick = "playVideo('https://www.youtube.com/embed/aSe1adndzfs')" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
                             d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
                     </svg>
                 </div>
             </article>
             <article>
-                <div class="main-video" id="play-video">
+                <div class="main-video" >
                     <img src="./images/paris.jpg" alt="Main Video">
-                    <svg class = "play" onclick = "playVideo()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <svg class = "play" onclick = "playVideo('https://www.youtube.com/embed/kOCkne-Bku4')" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
                             d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
                     </svg>
                 </div>
             </article>
             <article>
-                <div class="main-video" id="play-video">
+                <div class="main-video" >
                     <img src="./images/sotired.png" alt="Main Video">
-                    <svg class = "play" onclick = "playVideo()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <svg class = "play" onclick = "playVideo('https://www.youtube.com/embed/fvjpE_wFL5A')" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
                         <path
                             d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
                     </svg>
@@ -126,4 +132,4 @@
     <script type="text/javascript" src="./scripts/index.js"></script>
 </body>
 
-</html>
+</html> 

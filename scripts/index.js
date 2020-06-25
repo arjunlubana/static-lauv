@@ -14,8 +14,7 @@ selectElement('.close').addEventListener("click",()=> {
 });
 
 /* Playing video */
-function playVideo(){
+function playVideo(url){
     selectElement(".playing-video").classList.add("video-Player");
+    selectElement(".playing-video").src = url;
 }
-    
-
