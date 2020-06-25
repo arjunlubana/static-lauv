@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pacifico&display=swap');
+:root{
+    --primary-color:/* rgba(42, 200, 222,0.5) */#0044BE;
+    --secondary-color:/* #0044BE */#fff;
+}
+*,*:before,*:after{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primary-color);
+}
+
+/* Header section */
+header{
+    position: relative;
+    height:5rem;
+    background-color: var(--primary-color);
+    /* box-shadow: 0 -1px 1px #0044BE inset; */
+}
+.logo{
+    font-size: 3rem;
+    text-align: center;
+    font-family: Pacifico,"sans-serif";
+    color: var(--secondary-color);
+}
+/* Menu Toggle Buttons */
+.ham-menu{
+    float:left;
+    margin:1rem;
+    fill:var(--secondary-color);
+    cursor:pointer;
+    transition: opacity .5s ease-in;
+}
+.close-menu{
+    position: absolute;
+    height:5rem;
+    width:4rem;
+    padding:.9rem;
+    background-color:var(--secondary-color);
+    fill:#fafafa;
+    cursor:pointer;
+    transform:scaleX(0);
+    transform-origin: 0;
+    transition: all .5s ease;
+}
+.close-menu:hover{ 
+    background-color: var(--primary-color);
+}
+/* Navigation Menu */
+.nav-container{
+    position: absolute;
+}
+.nav{
+    position: absolute;
+    width:100vw;
+    top:5rem;
+    z-index: 10;
+    transform:scale(0);
+    transform-origin: 0 0;
+    transition: all .5s ease;
+}
+.navigation{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.navigation li{
+    padding:1rem 0;
+    margin:0;
+}
+.navigation li > a{
+    padding:1rem 50vw;
+    font-size:2rem;
+    color:white;
+    font-family:Courgette;
+    text-decoration:none;
+    background-color:var(--primary-color);
+    transition: all .5s;
+}
+.navigation a:hover{
+    color:var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .5s;
+    text-shadow:2px 3px 5px var(--primary-color);
+}
+
+.active{
+    transform:scale(1);
+}
+
+
+/* Hero Image */
+.hero-image{
+    position: relative;
+    width: 100vw;
+    height:90vh;
+    background-image: url("../images/lauv_albumart.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wave{
+    position: absolute;
+    bottom:0;
+    fill:var(--primary-color);
+}
+
+
+/* Listen Section */
+.submenu{
+    font-size:2.5rem;
+    font-family: Courgette,"sans-serif";
+    color:var(--secondary-color);
+    text-align: center;
+}
+.listen-links{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.link{
+    fill:var(--secondary-color);
+    padding: 1.5rem;
+}
+.link:hover{
+    fill: #d8cfcf;
+    transition: all .5s;
+}
+
+/* Videos Section */
+.videos{
+margin-top: 30vw;
+}
+
+.videos-grid{
+    display:grid;
+}
+.main-video {
+    position: relative;
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    transform:scale(1);
+    transition:all 0.5s ease;
+}
+.main-video img{
+    width:90vw;
+    height: auto;
+    border:2px solid var(--secondary-color);
+}
+
+.feature{
+    position: relative;
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    transform:scale(1);
+    transition:all 0.5s ease;
+}
+.feature img{
+    width:100%;
+}
+.play{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    fill:var(--primary-color);
+    cursor:pointer;
+}
+.main-video:hover {
+    opacity:0.7;
+    transform:scale(1.05);
+    transition:all 0.5s ease;
+}
+
+.playing-video{
+    opacity:0;
+    position:absolute;
+    width:100%;
+    height:105%;
+    border:.2rem solid var(--secondary-color);
+    z-index:-1;
+}
+.video-Player{
+    opacity:1;
+    z-index:1;
+    transition:.5s ease-in-out;
+}
